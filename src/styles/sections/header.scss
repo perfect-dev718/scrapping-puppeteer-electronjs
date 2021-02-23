@@ -1,0 +1,25 @@
+@media (min-width: 845px){
+  .navbar-expand-md .navbar-toggler {
+      display: none;
+  }
+  }
+.navbar-brand{
+  font-size: 30px;
+  cursor: pointer;
+}
+.navbar-nav a {
+  position: relative;
+}
+.navbar-nav a::after {
+  content: '';
+  right: 0;
+  top: calc(50% - 10px);
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: #777;
+}
+.navbar-nav a:last-child::after {
+  display: none; 
+}
